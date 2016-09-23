@@ -3,452 +3,195 @@
 @section('title', 'only for creative minds.')
 
 @section('content')
-    <!-- START PAGE META -->
-    <div id="page-meta" class="container">
-
-        <!-- SLOGAN -->
-        <div class="slogan">
-            <h2>Nuestros materiales destacados</h2>
-
-            <h3>...the 'pinterest' style!</h3>
+    <section class="container">
+        <h2 class="hidden">Lorem Ipsum</h2>
+        <?php $i = 1; ?>
+        @foreach ($materials as $material)
+        <article id="slider_content{{ $i }}">
+            <h3>{{ $material->title }}</h3>
+            <p>{{ $material->description }}</p>
+            <a class="button" href="{{ $material->url }}">{{ $material->title }}</a>
+        </article>
+        <?php $i++; ?>
+        @endforeach
+        <article id="slider_content3">
+            <h3>Lorem ipsum</h3>
+            <p>Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. <a href="javascript:void(0)" class="responsive_button">Mehr lesen...</a></p>
+            <a class="button" href="javascript:void(0)">Mehr lesen</a>
+        </article>
+        <div id="slides">
+            <img src="images/slider/dexter-mausoleum-1005284_1920.jpg" alt="Mmausoleum" />
+            <img src="images/slider/home-1353389_1920.jpg" alt="Home" />
+            <img src="images/slider/neuschwanstein-castle-467116_1920.jpg" alt="Neuschwanstein Castle" />
         </div>
+    </section>
 
-    </div>
-    <!-- END PAGE META -->
+    <section id="spacer">
+        <h2 class="hidden">Dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit?</p>
+        <div class="search">
+            <form action="#">
+                <input type="text" name="sitesearch" value="Enter a word..."/>
+                <input type="submit" name="start_search" class="button" value="Search"/>
+            </form>
+        </div>
+    </section>
 
-    <!-- START PRIMARY -->
-    <div id="primary" class="sidebar-no">
-    <div class="container group">
-    <div class="row">
+    <section id="boxcontent">
+        <h2 class="hidden">Adipiscing</h2>
+        <article>
+            <img src="images/icons/buzz-private-icon.png" alt="alt text about the private icon"/>
+            <h3>Lorem ipsum</h3>
+            <p>
+                Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen. 
+            </p>
+        </article>
+        <article>
+            <img src="images/icons/industry-engineering-icon.png" alt="alt text about the engineering icon"/>
+            <h3>Consectetuer</h3>
+            <p>
+                Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen...
+            </p>
+        </article>
+        <article>
+            <img src="images/icons/cell-phones-iphone-icon.png" alt="alt text about the iphone icon"/>
+            <h3>Dolor sit amet</h3>
+            <p>
+                Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg.
+            </p>
+        </article>
+        <br class="clear"/>
+    </section>
 
-    <!-- START CONTENT -->
-    <div class="span12 content group">
-
-    <div class="page type-page status-publish hentry group">
-
-    <script>
-        jQuery(document).ready(function ($) {
-            $('.sidebar').remove();
-
-            if (!$('#primary').hasClass('sidebar-no')) {
-                $('#primary').removeClass().addClass('sidebar-no');
-                $('.content').removeClass('span9').addClass('span12');
-            }
-
-        });
-    </script>
-
-    <div class="row">
-    <ul id="portfolio" class="pinterest pinterest thumbnails">
-    <li class="first work span3">
-        <div class="thumbnail">
-            <div class="picture_overlay">
-                <img width="260" height="124" src="images/portfolios/001-260x124.jpg" class="attachment-thumb_portfolio_pinterest"
-                     alt="001"/>
-
-                <div class="overlay">
-                    <div>
-                        <p>
-                            <a href="images/portfolios/001.jpg" rel="lightbox" class="ch-info-lightbox">
-                                <img src="images/icons/zoom.png" alt="Open Lightbox"/>
-                            </a>
-
-                            <a href="pinterest-bobmiler.html">
-                                <img src="images/icons/project.png" alt=""/>
-                            </a>
-                        </p>
-
-                        <p class="title">Bob Miller</p>
-
-                        <p class="subtitle">photoshop</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <h4>
-                <a href="pinterest-bobmiler.html">
-                    Bob Miller
+    <section id="four_columns">
+        <h2>
+            Lorem ipsum
+        </h2>    
+        <article class="img-item">
+            <h3 class="hidden">Dolor sit amet</h3>
+            <figure>  
+                <a href="images/slider/example-slide-1.jpg" rel="lightbox" title="Some title">
+                    <span class="thumb-screen"></span>
+                    <img src="images/slider/example-slide-1sml.jpg" alt="Some alt text"/>
                 </a>
-            </h4>
-
-            <p>Nullam volutpat, mauris scelerisque iaculis semper, justo odio rutrum urna, [...]</p>
-
-            <div class="work-skillsdate">
-                <p class="categories paragraph-links">
-                    <span class="meta-label">Project:</span> first
-                </p>
-
-                <p class="customer">
-                    <span class="meta-label">Customer:</span> Bob Miller - <a href="http://bmiller.com">bmiller.com</a>
-                </p>
-
-                <p class="workdate">
-                    <span class="meta-label">Year:</span> 2012
-                </p>
-            </div>
-
-
-        </div>
-    </li>
-
-    <li class="work span3">
-        <div class="thumbnail">
-
-            <div class="picture_overlay">
-                <img width="260" height="246" src="images/portfolios/00310-260x246.jpg" class="attachment-thumb_portfolio_pinterest"
-                     alt="003"/>
-
-                <div class="overlay">
-                    <div>
-                        <p>
-                            <a href="images/portfolios/00310.jpg" rel="lightbox" class="ch-info-lightbox">
-                                <img src="images/icons/zoom.png" alt="Open Lightbox"/>
-                            </a>
-
-                            <a href="#">
-                                <img src="images/icons/project.png" alt=""/>
-                            </a>
-                        </p>
-
-                        <p class="title">Nili Studios</p>
-
-                        <p class="subtitle">photoshop</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <h4>
-                <a href="#">Nili Studios</a>
-            </h4>
-
-            <p>Nullam volutpat, mauris scelerisque iaculis semper, justo odio rutrum urna, at cursus urna nisl et ipsum.
-                Donec dapibus lacus nec sapien faucibus eget suscipit lorem [...]</p>
-
-            <div class="work-skillsdate">
-                <p class="customer">
-                    <span class="meta-label">Customer:</span> Nili Studios - <a href="http://nili.com">nili.com</a>
-                </p>
-
-                <p class="workdate">
-                    <span class="meta-label">Year:</span> 2011
-                </p>
-            </div>
-        </div>
-    </li>
-
-
-    <li class="work span3">
-        <div class="thumbnail">
-
-            <div class="picture_overlay">
-                <img width="260" height="164" src="images/portfolios/0029-260x164.jpg" class="attachment-thumb_portfolio_pinterest"
-                     alt="002"/>
-
-                <div class="overlay">
-                    <div>
-                        <p>
-                            <a href="images/portfolios/0022.jpg" rel="lightbox" class="ch-info-lightbox">
-                                <img src="images/icons/zoom.png" alt="Open Lightbox"/>
-                            </a>
-
-                            <a href="#">
-                                <img src="images/icons/project.png" alt=""/>
-                            </a>
-                        </p>
-
-                        <p class="title">Vitale Premium</p>
-
-                        <p class="subtitle">illustrator</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <h4>
-                <a href="#">
-                    Vitale Premium
+                <figcaption>
+                    <strong>
+                        Photo by: Some name
+                    </strong>
+                    Als es die ersten Hügel des Kursivgebirges erklommen hatte
+                </figcaption>
+            </figure>
+        </article>
+        <article class="img-item">
+            <h3 class="hidden">Sit Amet</h3>
+            <figure>
+                <a href="images/slider/example-slide-2.jpg" rel="lightbox" title="Some title">
+                    <span class="thumb-screen"></span>
+                    <img src="images/slider/example-slide-2sml.jpg" alt="Some alt text"/>
                 </a>
-            </h4>
-
-            <p>Nullam volutpat, mauris scelerisque iaculis semper, justo odio rutrum urna, [...]</p>
-
-            <div class="work-skillsdate">
-                <p class="customer">
-                    <span class="meta-label">Customer:</span> Vitale Premium
-                </p>
-
-                <p class="workdate">
-                    <span class="meta-label">Year:</span> 2008
-                </p>
-            </div>
-        </div>
-    </li>
-
-
-    <li class="work span3">
-        <div class="thumbnail">
-
-            <div class="picture_overlay">
-                <img width="260" height="377" src="images/portfolios/00410-260x377.jpg" class="attachment-thumb_portfolio_pinterest"
-                     alt="004"/>
-
-                <div class="overlay">
-                    <div>
-                        <p>
-                            <a href="images/portfolios/00410.jpg" rel="lightbox" class="ch-info-lightbox">
-                                <img src="images/icons/zoom.png" alt="Open Lightbox"/>
-                            </a>
-
-                            <a href="#">
-                                <img src="images/icons/project.png" alt=""/>
-                            </a>
-                        </p>
-
-                        <p class="title">Digitpool Medien</p>
-
-                        <p class="subtitle">brand identity</p>
-                    </div>
-                </div>
-            </div>
-
-            <h4>
-                <a href="#">
-                    Digitpool Medien
+                <figcaption>
+                    <strong>
+                        Photo by: Some name
+                    </strong>
+                    warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen
+                </figcaption>
+            </figure>
+        </article>
+        <article class="img-item">
+            <h3 class="hidden">Dolor Sit</h3>
+            <figure>
+                <a href="images/slider/example-slide-3.jpg" rel="lightbox" title="Some title">
+                    <span class="thumb-screen"></span>
+                    <img src="images/slider/example-slide-3sml.jpg" alt="Some alt text"/>
                 </a>
-            </h4>
+                <figcaption>
+                    <strong>
+                        Photo by: Some name
+                    </strong>
+                    die Headline von Alphabetdorf und die Subline seiner eigenen Straße.
+                </figcaption>
+            </figure>
+        </article>
+        <article class="img-item">
+            <h3 class="hidden">Lorem Ipsum</h3>
+            <figure>
+                <a href="images/slider/example-slide-4.jpg" rel="lightbox" title="Some title">
+                    <span class="thumb-screen"></span>
+                    <img src="images/slider/example-slide-4sml.jpg" alt="Some alt text"/>
+                </a>
+                <figcaption>
+                    <strong>
+                        Photo by: Some name
+                    </strong>
+                    Wehmütig lief ihm eine rhetorische Frage über die Wange.
+                </figcaption>
+            </figure>
+        </article>
+        <br class="clear"/>
+    </section>
 
-            <p>Nullam volutpat, mauris scelerisque iaculis semper, justo odio rutrum urna, at cursus urna nisl et ipsum.
-                Donec dapibus lacus nec sapien faucibus eget suscipit lorem mattis.</p>
+    <section id="text_columns">
+        <h2 class="hidden">Blindtext</h2>
+        <article class="column1">
+            <h3>
+                Dolor sit amet
+            </h3>
+            <p>Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben worden und alles, was von ihrem Ursprung noch übrig wäre, sei das Wort "und" und das Blindtextchen solle umkehren und wieder in sein eigenes, sicheres Land zurückkehren.</p>
+                <p>Doch alles Gutzureden konnte es nicht überzeugen und so dauerte es nicht lange, bis ihm ein paar heimtückische Werbetexter auflauerten, es mit Longe und Parole betrunken machten und es dann in ihre Agentur schleppten, wo sie es für ihre Projekte wieder und wieder mißbrauchten.</p>
+        </article>
+        <section class="column2">
+            <h3 class="hidden">Lorem Impsum</h3>
+            <article class="row">  
+                <h4 class="hidden">Dolor sit</h4>      	
+                <img src="images/icons//rocket-icon.png" width="80" class="rocket" alt="rocket"/>            
+                <p>Und wenn es nicht umgeschrieben wurde, dann benutzen Sie es immernoch.</p>
+            </article> 
+            <article class="row">        	
+                <h4 class="hidden">Ipsum</h4>
+                <img src="images/icons/clock-icon.png" class="clock" width="80" alt="time"/>            
+                <p>Doch alles Gutzureden konnte es nicht überzeugen und so dauerte es nicht lange.</p>
+            </article>   
+        </section>
+    </section>
 
-            <p>Donec non mauris ac nulla [...]</p>
-
-            <div class="work-skillsdate">
-                <p class="customer">
-                    <span class="meta-label">Customer:</span> Digitpool Medien
-                </p>
-
-                <p class="workdate">
-                    <span class="meta-label">Year:</span> 2005
-                </p>
-            </div>
-        </div>
-    </li>
-
-
-    <li class="work span3">
-        <div class="thumbnail">
-
-            <div class="picture_overlay">
-                <img width="260" height="450" src="images/portfolios/0078.jpg" class="attachment-thumb_portfolio_pinterest" alt="007"/>
-
-                <div class="overlay">
-                    <div>
-                        <p>
-                            <a href="images/portfolios/0078.jpg" rel="lightbox" class="ch-info-lightbox">
-                                <img src="images/icons/zoom.png" alt="Open Lightbox"/>
-                            </a>
-                            <a href="#">
-                                <img src="images/icons/project.png" alt=""/>
-                            </a>
-                        </p>
-
-                        <p class="title">Kimeda</p>
-
-                        <p class="subtitle">logo design</p>
-                    </div>
+    <footer>
+        <h2 class="hidden">Our footer</h2>
+        <section id="copyright">
+            <h3 class="hidden">Copyright notice</h3>
+            <div class="wrapper">
+                <div class="social">
+                    <a href="javascript:void(0)"><img src="images/icons/google-plus-icon.png" alt="google plus" width="25"/></a>
+                    <a href="javascript:void(0)"><img src="images/icons/tumblr-icon.png" alt="tumblr" width="25"/></a>
+                    <a href="javascript:void(0)"><img src="images/icons/youtube-icon.png" alt="youtube" width="25"/></a>
+                    <a href="javascript:void(0)"><img src="images/icons/bebo-icon.png" alt="bebo" width="25"/></a>
+                    <a href="javascript:void(0)"><img src="images/icons/xing-icon.png" alt="xing" width="25"/></a>
                 </div>
+                &copy; Copyright 2016 by <a href="http://www.builder.com">Builder</a>. All Rights Reserved.
             </div>
+        </section>
+        <section class="wrapper">
+            <h3 class="hidden">Footer content</h3>
+            <article class="column">
+                <h4>Lorem ipsum</h4>
+                Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben worden und alles, was von ihrem Ursprung noch übrig wäre, sei das Wort "und" und das Blindtextchen solle umkehren und wieder in sein.</article>
+            <article class="column midlist">
+                <h4>Consectetuer</h4>
+                <ul>
+                    <li><a href="javascript:void(0)">Die Copy warnte das Blindtextchen</a></li>
+                    <li><a href="javascript:void(0)">Unterwegs traf es eine Copy</a></li>
+                    <li><a href="javascript:void(0)">Doch alles Gutzureden konnte</a></li>
+                    <li><a href="javascript:void(0)">Als es die ersten Hügel</a></li>
+                </ul>
+            </article>
+            <article class="column rightlist">
+                <h4>Dolor sit amet</h4>
+                <ul>
+                    <li><a href="javascript:void(0)"><img src="images/materials/arena.jpg" width="80" alt="some alt text"/><span>Unterwegs traf es eine Copy. Die Copy warnte.</span></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/materials/yeso.jpg" width="80" alt="some alt text"/><span>Doch alles Gutzureden konnte es nicht.</span></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/materials/ladrillo.jpg" width="80" alt="some alt text"/><span>Und es dann in ihre Agentur schleppten.</span></a></li>
+                </ul>
+            </article>
+        </section>
+    </footer>
 
-
-            <h4>
-                <a href="#">Kimeda</a>
-            </h4>
-
-            <p>Nullam volutpat, mauris scelerisque iaculis semper, justo odio rutrum urna, [...]</p>
-
-            <div class="work-skillsdate">
-                <p class="customer">
-                    <span class="meta-label">Customer:</span> Kimeda - <a href="http://kimeda.com">kimeda.com</a>
-                </p>
-
-                <p class="workdate">
-                    <span class="meta-label">Year:</span> 2012
-                </p>
-            </div>
-        </div>
-    </li>
-
-
-    <li class="work span3">
-        <div class="thumbnail">
-
-            <div class="picture_overlay">
-                <img width="260" height="225" src="images/portfolios/0069-260x225.jpg" class="attachment-thumb_portfolio_pinterest"
-                     alt="006"/>
-
-                <div class="overlay">
-                    <div>
-                        <p>
-                            <a href="images/portfolios/006.jpg" rel="lightbox" class="ch-info-lightbox">
-                                <img src="images/icons/zoom.png" alt="Open Lightbox"/>
-                            </a>
-                            <a href="#">
-                                <img src="images/icons/project.png" alt=""/>
-                            </a>
-                        </p>
-
-                        <p class="title">Black Mamba</p>
-
-                        <p class="subtitle">corporate</p>
-                    </div>
-                </div>
-            </div>
-
-            <h4>
-                <a href="#">Black Mamba</a>
-            </h4>
-
-            <p>Nullam volutpat, mauris scelerisque iaculis semper, justo odio rutrum urna, at cursus urna nisl et ipsum.
-                Donec dapibus lacus nec [...]</p>
-
-            <div class="work-skillsdate">
-                <p class="customer">
-                    <span class="meta-label">Customer:</span> Black Mamba - <a
-                        href="http://blackmamba.com">blackmamba.com</a>
-                </p>
-
-                <p class="workdate">
-                    <span class="meta-label">Year:</span> 2003
-                </p>
-            </div>
-
-        </div>
-    </li>
-
-    <li class="work span3">
-        <div class="thumbnail">
-            <div class="picture_overlay">
-                <img width="260" height="227" src="images/portfolios/00510-260x227.jpg" class="attachment-thumb_portfolio_pinterest"
-                     alt="005"/>
-
-                <div class="overlay">
-                    <div>
-                        <p>
-                            <a href="images/portfolios/0051.jpg" rel="lightbox" class="ch-info-lightbox">
-                                <img src="images/icons/zoom.png" alt="Open Lightbox"/>
-                            </a>
-
-                            <a href="#">
-                                <img src="images/icons/project.png" alt=""/>
-                            </a>
-                        </p>
-
-                        <p class="title">Colorful Oktopus</p>
-
-                        <p class="subtitle">oktopus</p>
-                    </div>
-                </div>
-            </div>
-
-            <h4>
-                <a href="#">Colorful Oktopus</a>
-            </h4>
-
-            <p>Nullam volutpat, mauris scelerisque iaculis semper, justo odio rutrum urna, [...]</p>
-
-            <div class="work-skillsdate">
-                <p class="customer">
-                    <span class="meta-label">Customer:</span> Colorful Oktopus
-                </p>
-
-                <p class="workdate">
-                    <span class="meta-label">Year:</span> 2009
-                </p>
-            </div>
-        </div>
-    </li>
-
-    <li class="last work span3">
-        <div class="thumbnail">
-            <div class="picture_overlay">
-                <img width="260" height="346" src="images/portfolios/0097-260x346.jpg" class="attachment-thumb_portfolio_pinterest"
-                     alt="009"/>
-
-                <div class="overlay">
-                    <div>
-                        <p>
-                            <a href="images/portfolios/0097.jpg" rel="lightbox" class="ch-info-lightbox">
-                                <img src="images/icons/zoom.png" alt="Open Lightbox"/>
-                            </a>
-                            <a href="#">
-                                <img src="images/icons/project.png" alt=""/>
-                            </a>
-                        </p>
-
-                        <p class="title">Guanacos</p>
-
-                        <p class="subtitle">corporate</p>
-                    </div>
-                </div>
-            </div>
-
-            <h4>
-                <a href="#">Guanacos</a>
-            </h4>
-
-            <p>Nullam volutpat, mauris scelerisque iaculis semper, justo odio rutrum urna, at cursus urna nisl et ipsum.
-                Donec dapibus lacus nec [...]</p>
-
-            <div class="work-skillsdate">
-                <p class="customer">
-                    <span class="meta-label">Customer:</span> Guanacos - <a href="http://guanacos.net">guanacos.net</a>
-                </p>
-
-                <p class="workdate"><span class="meta-label">Year:</span> 2012</p>
-            </div>
-
-        </div>
-    </li>
-
-    </ul>
-
-    <div class='general-pagination group'>
-        <a href='home-ii.html' class='selected'>1</a>
-        <a href='#'>2</a>
-        <a href='#'>&rsaquo;</a>
-    </div>
-    </div>
-
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            var container = $('#portfolio');
-            container.imagesLoaded(function () {
-                container.masonry({
-                    itemSelector: '.span3'
-                });
-            });
-
-            $(window).resize(function () {
-                $('#portfolio').masonry({
-                    itemSelector: '.span3'
-                });
-            })
-        });
-    </script>
-    </div>
-    <!-- START COMMENTS -->
-    <div id="comments"></div>
-    <!-- END COMMENTS -->
-    </div>
-    <!-- END CONTENT -->
-
-    <!-- START EXTRA CONTENT -->
-    <!-- END EXTRA CONTENT -->
-
-    </div>
-    </div>
-    </div>
-    <!-- END PRIMARY -->
 @endsection

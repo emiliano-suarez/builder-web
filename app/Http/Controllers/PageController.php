@@ -18,7 +18,6 @@ class PageController extends Controller
             $materials = $response->getBody();
             // echo  $materials;
         }
-
         return view('home', [ 'materials' => json_decode($materials) ]);
     }
 
