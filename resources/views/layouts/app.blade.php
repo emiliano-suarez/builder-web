@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
     <head>
         <meta charset="UTF-8"/>
@@ -7,17 +7,9 @@
         
         <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/lightbox.min.css" />
+
         <link href='http://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css' />
-
-        <script type="text/javascript" src="{!! asset('js/modernizr-custom.js') !!}"></script>
-        <script type="text/javascript" src="{!! asset('js/respond.js') !!}"></script>
-        <script type="text/javascript" src="{!! asset('js/jquery-3.1.0.min.js') !!}"></script>
-        <script type="text/javascript" src="{!! asset('js/lightbox.js') !!}"></script>
-        <script type="text/javascript" src="{!! asset('js/prefixfree.min.js') !!}"></script>
-        <script type="text/javascript" src="{!! asset('js/jquery.slides.min.js') !!}"></script>
-
-        <script type="text/javascript" src="{!! asset('js/app.js') !!}"></script>
 
         <!--[if lt IE 9]>
             <style>
@@ -64,5 +56,14 @@
 
         @yield('content')
 
+        <script type="text/javascript" src="{!! asset('js/modernizr-custom.js') !!}"></script>
+        <script type="text/javascript" src="{!! asset('js/respond.js') !!}"></script>
+        <script type="text/javascript" src="{!! asset('js/jquery-3.1.0.min.js') !!}"></script>
+        <script type="text/javascript" src="{!! asset('js/lightbox.min.js') !!}"></script>
+        <script type="text/javascript" src="{!! asset('js/prefixfree.min.js') !!}"></script>
+        <script type="text/javascript" src="{!! asset('js/jquery.slides.min.js') !!}"></script>
+        <script type="text/javascript" src="{!! asset('js/app.js') !!}"></script>
+
     </body>
+
 </html>

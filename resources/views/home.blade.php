@@ -70,13 +70,13 @@
         <article class="img-item">
             <h3 class="hidden">Dolor sit amet</h3>
             <figure>  
-                <a href="images/slider/example-slide-1.jpg" rel="lightbox" title="Some title">
+                <a href="images/slider/example-slide-1.jpg" data-lightbox="image-1" data-title="My caption 1">
                     <span class="thumb-screen"></span>
                     <img src="images/slider/example-slide-1sml.jpg" alt="Some alt text"/>
                 </a>
                 <figcaption>
                     <strong>
-                        Photo by: Some name
+                        Photo by: Some name 1
                     </strong>
                     Als es die ersten Hügel des Kursivgebirges erklommen hatte
                 </figcaption>
@@ -91,7 +91,7 @@
                 </a>
                 <figcaption>
                     <strong>
-                        Photo by: Some name
+                        Photo by: Some name 2
                     </strong>
                     warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen
                 </figcaption>
@@ -106,7 +106,7 @@
                 </a>
                 <figcaption>
                     <strong>
-                        Photo by: Some name
+                        Photo by: Some name 3
                     </strong>
                     die Headline von Alphabetdorf und die Subline seiner eigenen Straße.
                 </figcaption>
@@ -121,7 +121,7 @@
                 </a>
                 <figcaption>
                     <strong>
-                        Photo by: Some name
+                        Photo by: Some name 4
                     </strong>
                     Wehmütig lief ihm eine rhetorische Frage über die Wange.
                 </figcaption>
