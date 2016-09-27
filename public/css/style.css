@@ -144,13 +144,13 @@ nav ul li a:hover
 #mobileMenu ul li
 {
     display:block;
-    background-color: #E56038;
+    background-color: #307B2B;
     color: #fff;
     padding: 12px 0;
     letter-spacing: 0.1em;
     text-align: center;
     text-transform: uppercase;
-    border-bottom: 1px solid #CC5836;
+    border-bottom: 1px solid #215A19;
 }
 
 .toggleMobile
@@ -811,7 +811,7 @@ footer .wrapper .column h4
             width: 40px;
             height: 8px;
             left: 0;
-            background: #EDA28C;
+            background: #99D37C;
             -webkit-transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
             transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
     }
