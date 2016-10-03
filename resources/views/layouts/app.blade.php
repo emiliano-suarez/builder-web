@@ -56,6 +56,46 @@
 
         @yield('content')
 
+        <footer>
+            <h2 class="hidden">Our footer</h2>
+            <section id="copyright">
+                <h3 class="hidden">Copyright notice</h3>
+                <div class="wrapper">
+                    <div class="social">
+                        <a href="javascript:void(0)"><img src="images/icons/google-plus-icon.png" alt="google plus" width="25"/></a>
+                        <a href="javascript:void(0)"><img src="images/icons/tumblr-icon.png" alt="tumblr" width="25"/></a>
+                        <a href="javascript:void(0)"><img src="images/icons/youtube-icon.png" alt="youtube" width="25"/></a>
+                        <a href="javascript:void(0)"><img src="images/icons/bebo-icon.png" alt="bebo" width="25"/></a>
+                        <a href="javascript:void(0)"><img src="images/icons/xing-icon.png" alt="xing" width="25"/></a>
+                    </div>
+                    &copy; Copyright 2016 by <a href="http://www.builder.com">Builder</a>. All Rights Reserved.
+                </div>
+            </section>
+            <section class="wrapper">
+                <h3 class="hidden">Footer content</h3>
+                <article class="column">
+                    <h4>Lorem ipsum</h4>
+                    Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben worden und alles, was von ihrem Ursprung noch übrig wäre, sei das Wort "und" und das Blindtextchen solle umkehren und wieder in sein.</article>
+                <article class="column midlist">
+                    <h4>Consectetuer</h4>
+                    <ul>
+                        <li><a href="javascript:void(0)">Die Copy warnte das Blindtextchen</a></li>
+                        <li><a href="javascript:void(0)">Unterwegs traf es eine Copy</a></li>
+                        <li><a href="javascript:void(0)">Doch alles Gutzureden konnte</a></li>
+                        <li><a href="javascript:void(0)">Als es die ersten Hügel</a></li>
+                    </ul>
+                </article>
+                <article class="column rightlist">
+                    <h4>Dolor sit amet</h4>
+                    <ul>
+                        <li><a href="javascript:void(0)"><img src="images/materials/arena.jpg" width="80" alt="some alt text"/><span>Unterwegs traf es eine Copy. Die Copy warnte.</span></a></li>
+                        <li><a href="javascript:void(0)"><img src="images/materials/yeso.jpg" width="80" alt="some alt text"/><span>Doch alles Gutzureden konnte es nicht.</span></a></li>
+                        <li><a href="javascript:void(0)"><img src="images/materials/ladrillo.jpg" width="80" alt="some alt text"/><span>Und es dann in ihre Agentur schleppten.</span></a></li>
+                    </ul>
+                </article>
+            </section>
+        </footer>
+
         <script type="text/javascript" src="{!! asset('js/modernizr-custom.js') !!}"></script>
         <script type="text/javascript" src="{!! asset('js/respond.js') !!}"></script>
         <script type="text/javascript" src="{!! asset('js/jquery-3.1.0.min.js') !!}"></script>
